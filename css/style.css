@@ -18,20 +18,47 @@ body {
 	overflow: hidden;
 	position: relative;
 	background-color: #000000;
+	z-index: -100;
 }
 
-.overlay {
-	position: absolute;
-	height: 110vh;
-	width: 100%;
-	background-color: #000000;
-	opacity: .6;
-	z-index: -10;
+/* Navbar */
+
+nav {
+	transition: background .3s ease-in-out;
 }
+
+.navbar-dark .navbar-brand,
+.logo {
+	color: #7ed56f;
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 0 10px;
+}
+
+.navbar-dark .navbar-brand:hover {
+	color: #5fc04b;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+}
+.navbar-toggler:focus {
+	outline: none;
+}
+
+.scrolled {
+	background-color: #707070;
+}
+
+/* hero */
 
 .parallax-window {
 	min-height: 110vh;
-	background: transparent;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: -100;
+	position: relative;
 }
 
 .hero .row {
@@ -49,8 +76,9 @@ body {
 	transform: skewY(2deg);
 	margin-top: -4em;
 	border-top-right-radius: 50px;
-	z-index: -1;
+	z-index: -5;
 	position: relative;
+	padding: 5em 0;
 }
 
 .content::after {
@@ -59,7 +87,7 @@ body {
 	height: 100px;
 	position: absolute;
 	top: -100px;
-	box-shadow: -70px 70px 0 15px black;
+	box-shadow: -70px 70px 0 20px black;
 	left: 0;
 	border-radius: 50%;
 	z-index: -2;
@@ -67,35 +95,58 @@ body {
 
 .board {
 	padding: 4em;
-	transform: translateY(-10em) skewY(-2deg);
-	top: -100px;
-	background-color: rgba(66, 66, 66, 0.753);
+	transform: skewY(-2deg);
+	background-color: rgba(66, 66, 66, 0.315);
 	color: white;
-	min-height: 50em;
 	border-radius: 4px;
 	z-index: 10;
 	position: relative;
+}
+.board .about img {
+	border-radius: 10px;
+}
+
+.board .title {
+	color: #7ed56f;
 }
 
 .podcast .icon {
 	color: white;
 }
 
+.contact {
+	width: 80%;
+}
+
 .contact h3 {
 	margin: 2em;
+}
+
+.contact .icon a {
+	margin: 1em;
+}
+
+.contact .icon img {
+	width: 3em;
 }
 
 /* footer section */
 
 .footer {
 	background-color: #808080;
-	padding: 4em 0;
+	padding-top: 2em;
 	color: #ffffff;
 	transform: skewY(-2deg);
 	border-top-left-radius: 50px;
+	position: relative;
+	z-index: 10;
 }
 
-.footer::before {
+.footer a {
+	color: #e4e4e4;
+}
+
+/* .footer::before {
 	content: "";
 	width: 50px;
 	height: 50px;
@@ -103,13 +154,13 @@ body {
 	position: absolute;
 	top: -49px;
 	right: 0;
-}
+} */
 
 .footer::after {
 	content: "";
 	width: 100px;
 	height: 100px;
-	background-color: #000000;
+	box-shadow: 70px 70px 0 20px #808080;
 	border-radius: 50%;
 	position: absolute;
 	right: 0;
@@ -126,7 +177,7 @@ body {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 4em;
+	height: 5em;
 	background-color: #808080;
 	z-index: -4;
 	transform: translateY(1.6em);
