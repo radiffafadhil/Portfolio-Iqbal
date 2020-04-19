@@ -25,6 +25,9 @@
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#project" class="nav-link">Project</a>
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link" href="#podcast">Podcast</a>
                     </li>
                     <li class="nav-item">
@@ -53,44 +56,73 @@
     <section class="content">
        <div class="container">
            <div class="board">
-            <div  id="about" class="about row justify-content-center align-items-center">
-                <div class="col-12 px-0 px-md-2 col-md-6 about-text">
-                    <h3 class="title">About</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eos, cupiditate reprehenderit minus quae libero accusamus magni illum nulla tenetur facere dolor ut veritatis quisquam nemo praesentium ad dolore facilis.</p>
+
+            <section id="about" class="about row justify-content-center align-items-center">
+                <div class="col-6"> 
+                    <div class="row justify-content-center">
+                        <div class="col">
+                          <h2 class="mb-4">About Me</h2>
+                          <ul class="about-info mt-4 px-md-0 px-2">
+                            <li class="d-flex"><span>Name:</span> <span>Iqbal Fakhriza</span></li>
+                            <li class="d-flex"><span>Date of birth:</span> <span>April 14, 2001</span></li>
+                            <li class="d-flex"><span>Address:</span> <span>Medan, Indonesia</span></li>
+                            <li class="d-flex"><span>Post code:</span> <span>20226</span></li>
+                            <li class="d-flex"><span>Email:</span> <span><a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></span></li>
+                            <li class="d-flex"><span>Phone: </span> <span>+62 123456789</span></li>
+                          </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 d-none d-md-block about-img">
+                <div class="col-6 text-center">
+                    <img src="./images/profile.jpg" alt="IqbalFakhriza" class="img-fluid img-about">
+                </div>
+            </section>
+
+            <section  id="project" class="project row my-5 justify-content-center align-items-center">
+                <div class="col-6 d-none d-md-block project-img">
                     <img class="img-fluid" src="images/pod.jpg" alt="icon">
                 </div>
-            </div>
-            <div id="podcast" class="podcast my-5 row justify-content-center align-items-center">
-                <div class="col-12 col-md-6 order-2 order-md-1  text-center">
-                    <iframe src="https://open.spotify.com/embed-podcast/show/6v9I3euP6dr1QAmiQuW2rq" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    <!-- <i class="icon fas fa-podcast fa-9x"></i> -->
+                <div class="col-12 col-md-6  px-0 px-md-5 project-text">
+                    <h3 class="title">Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eos, cupiditate reprehenderit minus quae libero accusamus magni illum nulla tenetur facere dolor ut veritatis quisquam nemo praesentium ad dolore facilis.</p>
                 </div>
-                <div class="col-12 px-0 px-md-2 order-1 order-md-2 col-md-6">
+            </section>
+            <section id="podcast" class="podcast my-5 row justify-content-center align-items-center">
+                <div class="col-12 px-0 px-md-2 col-md-6 px-0 px-md-5">
                     <h3 class="title">My Podcast</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur minima iste delectus deleniti quis corrupti, molestias cum corporis, asperiores, debitis qui reprehenderit alias mollitia laborum. Nulla quisquam tenetur tempora natus.</p>
                 </div>
-            </div>
+                <div class="col-12 col-md-6  text-center">
+                    <iframe src="https://open.spotify.com/embed-podcast/show/6v9I3euP6dr1QAmiQuW2rq" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <!-- <i class="icon fas fa-podcast fa-9x"></i> -->
+                </div>
+            </section>
 
-            <div id="contact" class=" mb-0 row justify-content-center align-items-center">
+            <section id="contact" class=" mb-0 row justify-content-center align-items-center">
                 <div class="contact text-center">
                     <h3 class="title">Contacts</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, nostrum. Nisi reprehenderit, culpa nihil inventore consequatur veniam illum perferendis, sed excepturi harum quidem adipisci. Illum aperiam debitis minima corrupti distinctio!</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error laborum soluta illum expedita ab, consequatur numquam veniam, recusandae asperiores provident neque doloremque molestiae ipsum esse id eveniet! Praesentium, ab eveniet?</p>
-                    <div class="icon row justify-content-center">
-                        <a href="#">
+                    <h4 class="mb-2">Wanna collaborate with me?</h4>
+                    <button>
+                        <a href="mailto:yourmail@gmail.com" class="email text-center">
+                            Get In Touch
+                        </a>
+                    </button>
+                    <div class="icon row justify-content-center mt-2">
+                        <a href="#" target="_blank">
                             <img src="./images/whatsapp.svg" alt="whatsapp">
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <img src="./images/insta.svg" alt="whatsapp">
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <img src="./images/spotify.svg" alt="whatsapp">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="./images/linkedin.svg" alt="linkedin">
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
 
            </div>
        </div>
@@ -100,7 +132,11 @@
         <div class="container">
             <div class="text-center">
                 <p><span class="logo">STD</span></p>
-                <p>Crafted by <a href="http://iqbaltan.herokuapp.com" target="_blank">Iqbal Tan</a></p>
+                <p>Crafted by <a href="http://iqbaltan.herokuapp.com" target="_blank">Iqbal Tan</a> &copy; 2020</p>
+                <div class="row justify-content-center mb-2">
+                    <a href="#" class="mr-2">Terms of Service</a>
+                    <a href="#" class="ml-2">Privacy Policy</a>
+                </div>
             </div>
         </div>
     </footer>

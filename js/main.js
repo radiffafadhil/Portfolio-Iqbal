@@ -1,7 +1,7 @@
 $(function() {
 	$(document).scroll(function() {
 		var $nav = $('#navbarUtama');
-		$nav.toggleClass('scrolled', $(this).scrollTop() > 380);
+		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
 });
 
